@@ -1,7 +1,7 @@
 /*
 * FILE          : f3.cpp
 * PROJECT       : Focused Assignment 3
-* PROGRAMMER    : Het Patel
+* PROGRAMMER    : Het Patel 8830794
 * FIRST VERSION : 2023 - 02 - 17
 * DESCRIPTION   : This program prompts the user for ten numbers
 and determines which is the lowest number and it's index value.
@@ -17,7 +17,7 @@ int main()	{
 	int indexValue = 0;
 	int min = 2147483647;
 
-	printf("Enter ten numbers of your choice:");
+	printf("Enter ten numbers of your choice:\n");
 	for (int j = 0; j < 10; j++) {  //Loop for multiple user input
 		numbers[j] = { getNum() };
 
@@ -27,7 +27,7 @@ int main()	{
 		}
 	}
 
-	printf("The lowest value is %d at index %d", min, indexValue);
+	printf("The lowest value is %d at index %d\n", min, indexValue);
 
 	return 0;
 }
