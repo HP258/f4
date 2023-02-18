@@ -2,8 +2,21 @@
 
 int getNum(void);
 
-int main()
-{
+int main()	{
+
+	int numbers[10];
+	int indexValue = 0;
+	int min = 2147483647;
+
+	printf("Enter ten numbers of your choice:");
+	for (int j = 0; j < 10; j++) {
+		numbers[j] = { getNum() };
+
+		if (numbers[j] < min) {
+			min = numbers[j];
+			indexValue = j;
+		}
+	}
 	return 0;
 }
 
