@@ -1,22 +1,34 @@
+/*
+* FILE          : f3.cpp
+* PROJECT       : Focused Assignment 3
+* PROGRAMMER    : Het Patel
+* FIRST VERSION : 2023 - 02 - 17
+* DESCRIPTION   : This program prompts the user for ten numbers
+and determines which is the lowest number and it's index value.
+*/
+
 #include <stdio.h>
 
-int getNum(void);
+int getNum(void); //Function prototype
 
 int main()	{
 
-	int numbers[10];
+	int numbers[10]; //Declaring the arrray
 	int indexValue = 0;
 	int min = 2147483647;
 
 	printf("Enter ten numbers of your choice:");
-	for (int j = 0; j < 10; j++) {
+	for (int j = 0; j < 10; j++) {  //Loop for multiple user input
 		numbers[j] = { getNum() };
 
-		if (numbers[j] < min) {
+		if (numbers[j] < min) {  //Condition for deriving the lowest value
 			min = numbers[j];
 			indexValue = j;
 		}
 	}
+
+	printf("The lowest value is %d at index %d", min, indexValue);
+
 	return 0;
 }
 
